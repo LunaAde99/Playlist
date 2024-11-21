@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria canzoni</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="CSSLibreriacanzoni.css">
+    <link rel="icon" type="image/png" href="luna.ico">
+    <script src="ScriptLibreriacanzoni.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <a id="Playlist" href="#Playlist" class="brand-logo">Playlist</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#Aggiungi">Aggiungi</a></li>
+                </ul>
+            </div>
+        </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posizione</th>
+                    <th>Titolo</th>
+                    <th>Autore</th>
+                    <th>Anno di pubblicazione</th>
+                    <th>Ascolta su Youtube</th>
+                </tr>
+            </thead>
+            <tbody id="tab"></tbody>
+        </table>
+        <div class="row">
+
+            <div class="input-field col s12 m6 " id="sel1">
+                <select id="select1">
+
+                </select>
+                <label>Lista canzone 1</label>
+            </div>
+            <div class="input-field col s12 m6" id="sel2">
+                <select id="select2">
+
+                </select>
+                <label>Lista canzone 1</label>
+            </div>
+            <a class="waves-effect waves-light btn" id="btn">Cambia posizione</a>
+        </div>
+        <h3 id="Aggiungi">Aggiungi una nuova canzone</h3>
+        <label>Inserisci il titolo</label>
+        <input type="text" id="canzoneV" placeholder="Nome canzone">
+        <label>Inserisci l'autore</label>
+        <input type="text" id="autoreV" placeholder="Autore">
+        <label>Inserisci l'anno di pubblicazione</label>
+        <input type="number" id="annoV" placeholder="Anno di pubblicazione">
+        <label>Inserisci l'url di Youtube</label>
+        <input type="text" id="urlV" placeholder="URL di Youtube">
+        <a class="waves-effect waves-light btn" id="btnAdd">Aggiungi</a>
+        <br>
+        <hr>
+        <a class="waves-effect waves-light btn red" id="btnClear">Rimuovi tutto</a>
+        <br>
+        <hr>
+        <a class="waves-effect waves-light btn" id="back-to-top">Torna Su</a>
+        <br>
+        <hr>
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2024 Copyright
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
